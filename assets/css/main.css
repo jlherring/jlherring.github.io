@@ -3265,11 +3265,11 @@ body {
 }
 
 .timecontainer.left .date {
-  right: -75px;
+  right: -90px;
 }
 
 .timecontainer.right .date {
-  left: -75px;
+  left: -90px;
 }
 
 .timecontainer .icon {
