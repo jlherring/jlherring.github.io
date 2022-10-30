@@ -1728,6 +1728,17 @@ input, select, textarea {
 
 		}
 
+/* new modal button container */
+	.dialog {
+		/*background: yellow; */
+		border-radius: 8px;
+		border: solid 2px #575d59;
+		width: 60%;
+		overflow-y: scroll;
+		z-index: 9999;
+		padding: 1em 3em 3em 3em;
+	}
+
 /* Image */
 
 	.image {
