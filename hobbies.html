@@ -57,10 +57,28 @@
 												<ul class="divided">
 													<li>
 														<article class="box post-summary">
-															<h3><a href="#">Coming Soon</a></h3>
+															<h3><a href="#AKquilt">Baby Quilt</a></h3>
 															<ul class="meta">
 																<li class="icon fa-clock">Date TBD</li>
+																<li>
+																<div class="button-container">
+																	 <button>
+																	   See More
+																	 </button>
+																	</div>
+																	<dialog>
+																	 <div>
+																		 Are you sure you want to delete this item?
+																	 </div>
+																	 <div>
+																	   <button class="close">
+																		 Great!
+																	   </button>
+																	 </div>
+																	</dialog>
+																</li>
 															</ul>
+
 														</article>
 													</li>
 													<li>
@@ -113,7 +131,7 @@
 											</header>
 
 											<section>
-												<span class="image featured"><img src="images/pic05.jpg" alt="" /></span>
+												<span class="image featured"><img src="images/maternity/kyleandjennymaternity-93.jpg" alt="" /></span>
 												<p>
 													Whether I'm on or off the clock, I love learning new skills and getting creative.
 												</p>
@@ -198,15 +216,16 @@
 														</section>
 
 												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><a href="#" class="button large">Do Something</a></li>
-														<li><a href="#" class="button alt large">Think About It</a></li>
-													</ul>
-												</div>
 											</div>
 										</div>
 									</section>
+
+								<div class="col-12">
+								<ul class="actions">
+									<li><a href="mailto:jlherring@gmail.com" class="button large">Contact Me</a></li>
+									<li><a href="assets/Resume_HerringJenny.pdf" class="button alt large">Last Resume Plug</a></li>
+								</ul>
+							</div>
 
 							</div>
 						</div>
@@ -257,6 +276,18 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				const modal = document.querySelector("dialog")
+				document.querySelector(".button-container button").addEventListener("click", () => {
+				 modal.showModal();
+				});
+				const closeBtns = document.getElementsByClassName("close");
+				for (btn of closeBtns) {
+				 btn.addEventListener("click", () => {
+				   modal.close();
+				 })
+				}
+			</script>
 
 	</body>
 </html>
