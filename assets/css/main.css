@@ -1732,13 +1732,16 @@ input, select, textarea {
 	.dialog {
 		/*background: yellow; */
 		border-radius: 8px;
-		border: solid 2px #575d59;
+		border: solid 2px white;
 		width: 60%;
 		height: 75%;
 		z-index: 9999;
-		padding: 2em 3em 3em 3em;
+		padding: 3em 4em 4em 4em;
 		justify-content: start;
+		font-size: 1.25em;
+		color: #6b7770;
 	}
+
 
 	.overflow-hidden {
 		overflow: hidden;
@@ -2888,7 +2891,6 @@ input, select, textarea {
 						-moz-osx-font-smoothing: grayscale;
 						-webkit-font-smoothing: antialiased;
 						display: inline-block;
-						font-style: normal;
 						font-variant: normal;
 						text-rendering: auto;
 						line-height: 1;
