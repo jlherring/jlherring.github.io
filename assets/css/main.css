@@ -1734,10 +1734,14 @@ input, select, textarea {
 		border-radius: 8px;
 		border: solid 2px #575d59;
 		width: 60%;
-		overflow-y: scroll;
 		z-index: 9999;
 		padding: 1em 3em 3em 3em;
 	}
+
+	.overflow-hidden {
+		overflow: hidden;
+	}
+
 
 /* Image */
 
