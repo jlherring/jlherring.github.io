@@ -1737,9 +1737,12 @@ input, select, textarea {
 		height: 75%;
 		z-index: 9999;
 		padding: 3em 4em 4em 4em;
-		justify-content: start;
 		font-size: 1.25em;
 		color: #6b7770;
+
+		&.visible {
+   			 display: block;
+  		}
 	}
 
 
@@ -2061,6 +2064,13 @@ input, select, textarea {
 				}
 
 /* Meta */
+
+	p.meta {
+			font-size: 0.85em;
+			color: #a1aaa5;
+			list-style: none;
+			padding-left: 0;
+		}
 
 	ul.meta {
 		font-size: 0.85em;
