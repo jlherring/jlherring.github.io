@@ -2066,11 +2066,12 @@ input, select, textarea {
 /* Meta */
 
 	p.meta {
-			font-size: 0.85em;
+			font-size: 0.95em;
 			color: #a1aaa5;
 			list-style: none;
 			padding-left: 0;
 		}
+
 
 	ul.meta {
 		font-size: 0.85em;
