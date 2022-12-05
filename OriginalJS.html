@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
+  <title>Legend widget - 4.11</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.11/esri/themes/light/main.css" />
+
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+  </style>
+
+  <script src="https://js.arcgis.com/4.11/"></script>
+  <script>
+    require([
+      "esri/views/MapView",
+      "esri/widgets/Legend",
+      "esri/WebMap",
+      "esri/layers/MapImageLayer"
+    ], function (MapView, Legend, WebMap, MapImageLayer) {
+      var webmap = new WebMap({
+        portalItem: {
+          // autocasts as new PortalItem()
+          id: "4abe6a830b8f466dacf8abfde567a781"
+        }
+      });
+
+      var layer = new MapImageLayer({
+        url:
+          "https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer",
+        sublayers: [
+          {
+            id: 2,
+            visible: true
+          }
+        ]
+      });
+
+      webmap.add(layer);
+
+      var view = new MapView({
+        container: "viewDiv",
+        map: webmap
+      });
+
+      view.when(function () {
+        var featureLayerStates = webmap.layers.getItemAt(0);
+        var featureLayerEd = webmap.layers.getItemAt(1);
+
+        var legend = new Legend({
+          view: view,
+          layerInfos: [
+            {
+              layer: featureLayerStates,
+              title: "States"
+            },
+            {
+              layer: featureLayerEd,
+              title: "NY Educational Attainment"
+            }
+          ]
+        });
+
+        view.ui.add(legend, "bottom-right");
+      });
+    });
+  </script>
+</head>
+
+<body class="calcite">
+  <div id="viewDiv"></div>
+</body>
+
+</html>
