@@ -19,8 +19,10 @@
       "esri/widgets/Legend",
       "esri/WebMap",
       "esri/layers/MapImageLayer",
-		"esri/layers/GeoJSONLayer"
-    ], function (MapView, Legend, WebMap, MapImageLayer, GeoJSONLayer) {
+		"esri/layers/GeoJSONLayer",
+        "esri/symbols/SimpleMarkerSymbol",
+        "esri/renderers/SimpleRenderer"
+    ], function (MapView, Legend, WebMap, MapImageLayer, GeoJSONLayer, SimpleMarkerSymbol, SimpleRenderer) {
       var webmap = new WebMap({
         portalItem: {
           // autocasts as new PortalItem()
@@ -29,11 +31,20 @@
         }
       });
 
+      var renderer = new SimpleRenderer({
+          symbol: new SimpleMarkerSymbol({
+              size: 10,
+              color: 'black',
+              outline: null
+          })
+
+      });
+
       var geoLayer = new GeoJSONLayer({
         url:
           "assets/LivingLocations.geojson",
 		  copyright: 'Jenny Herring',
-
+          renderer: renderer,
 
       });
 
