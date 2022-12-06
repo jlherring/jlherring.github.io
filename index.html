@@ -18,27 +18,27 @@
       "esri/views/MapView",
       "esri/widgets/Legend",
       "esri/WebMap",
-      "esri/layers/MapImageLayer"
-    ], function (MapView, Legend, WebMap, MapImageLayer) {
+      "esri/layers/MapImageLayer",
+		"esri/layers/GeoJSONLayer"
+    ], function (MapView, Legend, WebMap, MapImageLayer, GeoJSONLayer) {
       var webmap = new WebMap({
         portalItem: {
           // autocasts as new PortalItem()
+			// Living Atlas Color Pencil Map: https://epa.maps.arcgis.com/home/item.html?id=826498a48bd0424f9c9315214f2165d4
           id: "826498a48bd0424f9c9315214f2165d4"
         }
       });
 
-      var layer = new MapImageLayer({
+      var geoLayer = new GeoJSONLayer({
         url:
-          "https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer",
-        sublayers: [
-          {
-            id: 2,
-            visible: true
-          }
-        ]
+          "assets/LivingLocations.geojson",
+		  copyright: 'Jenny Herring',
+
+
       });
 
-      webmap.add(layer);
+      webmap.add(geoLayer);
+      //webmap.add(layer);
 
       var view = new MapView({
         container: "mapDiv",
@@ -49,14 +49,12 @@
 
       view.when(function () {
         var featureLayerStates = webmap.layers.getItemAt(0);
-        var featureLayerEd = webmap.layers.getItemAt(1);
-
         var legend = new Legend({
           view: view,
           layerInfos: [
             {
               layer: featureLayerStates,
-              title: "States"
+              title: "Where in the world?"
             },
 
           ]
