@@ -52,13 +52,6 @@
 
       webmap.add(geoLayer);
 
-      // let homeWidget = new Home({
-      //    view: view,
-      //    viewpoint: new Viewpoint()
-      // });
-      //
-      // webmap.add(homeWidget, "top-left");
-
 
       var view = new MapView({
         container: "mapDiv",
@@ -66,6 +59,12 @@
 		  zoom: 6,
         map: webmap,
       });
+
+       const homeBtn = new Home({
+          view: view
+        });
+
+        view.ui.add(homeBtn, "top-left");
 
     });
   </script>
