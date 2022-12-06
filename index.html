@@ -23,7 +23,7 @@
       var webmap = new WebMap({
         portalItem: {
           // autocasts as new PortalItem()
-          id: "4abe6a830b8f466dacf8abfde567a781"
+          id: "826498a48bd0424f9c9315214f2165d4"
         }
       });
 
@@ -42,7 +42,9 @@
 
       var view = new MapView({
         container: "mapDiv",
-        map: webmap
+	    center: [-80.2946, 34.592 ],
+		  zoom: 3,
+        map: webmap,
       });
 
       view.when(function () {
