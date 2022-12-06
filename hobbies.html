@@ -11,6 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel=icon href=assets/css/images/favicon.png>
+		<link rel="stylesheet" href="https://js.arcgis.com/4.11/esri/themes/light/main.css" />
+		<script src="https://js.arcgis.com/4.11/"></script>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -266,11 +268,8 @@
 									<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 								</ul>
 							</div>
-
-
 					</div>
 				</footer>
-
 		</div>
 
 		<!-- Scripts -->
@@ -281,24 +280,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-
-	        <script>
-				const modal = document.querySelector("dialog")
-				document.querySelector(".button-container button").addEventListener("click", () => {
-				 modal.showModal();
-				 modal.scrollTo(0,0);
-				 document.querySelector("body").classList.add("overflow-hidden");
-				 document.querySelector("article").classList.remove("overflow-hidden");
-				});
-				const closeBtns = document.getElementsByClassName("close");
-				for (btn of closeBtns) {
-				 btn.addEventListener("click", () => {
-				   modal.close();
-				   document.querySelector("body").classList.remove("overflow-hidden");
-				 })
-				}
-			</script>
 
 	</body>
 </html>
