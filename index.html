@@ -8,9 +8,65 @@
 	<head>
 		<title>Jenny Herring</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel=icon href=assets/css/images/favicon.png>
+		<link rel="stylesheet" href="https://js.arcgis.com/4.11/esri/themes/light/main.css" />
+		<script src="https://js.arcgis.com/4.11/"></script>
+  <script>
+    require([
+      "esri/views/MapView",
+      "esri/widgets/Legend",
+      "esri/WebMap",
+      "esri/layers/MapImageLayer"
+    ], function (MapView, Legend, WebMap, MapImageLayer) {
+      var webmap = new WebMap({
+        portalItem: {
+          // autocasts as new PortalItem()
+          id: "4abe6a830b8f466dacf8abfde567a781"
+        }
+      });
+
+      var layer = new MapImageLayer({
+        url:
+          "https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer",
+        sublayers: [
+          {
+            id: 2,
+            visible: true
+          }
+        ]
+      });
+
+      webmap.add(layer);
+
+      var view = new MapView({
+        container: "mapDiv",
+        map: webmap
+      });
+
+      view.when(function () {
+        var featureLayerStates = webmap.layers.getItemAt(0);
+        var featureLayerEd = webmap.layers.getItemAt(1);
+
+        var legend = new Legend({
+          view: view,
+          layerInfos: [
+            {
+              layer: featureLayerStates,
+              title: "States"
+            },
+            {
+              layer: featureLayerEd,
+              title: "NY Educational Attainment"
+            }
+          ]
+        });
+
+        view.ui.add(legend, "bottom-right");
+      });
+    });
+  </script>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -54,16 +110,9 @@
 								<!-- Features -->
 									<section class="box features">
 										<h2 class="major"><span>A Major Heading</span></h2>
-										<div>
-											<div class="row">
+										<div class="calcite" id="mapDiv">
+											map
 
-												<div class="col-12">
-													<ul class="actions">
-														<li><a href="#" class="button large">Do Something</a></li>
-														<li><a href="#" class="button alt large">Think About It</a></li>
-													</ul>
-												</div>
-											</div>
 										</div>
 									</section>
 

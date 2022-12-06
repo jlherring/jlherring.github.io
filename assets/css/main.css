@@ -2375,6 +2375,15 @@ input, select, textarea {
 		padding-top: 3.25em;
 	}
 
+	/* added for JS map */
+	#mapDiv {
+      padding: 0;
+      margin: 0;
+      height: 50%;
+      width: 50%;
+      overflow: hidden;
+    }
+
 	#nav {
 		position: fixed;
 		top: 0;
