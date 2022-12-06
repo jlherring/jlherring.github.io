@@ -21,8 +21,9 @@
       "esri/layers/MapImageLayer",
 		"esri/layers/GeoJSONLayer",
         "esri/symbols/SimpleMarkerSymbol",
-        "esri/renderers/SimpleRenderer"
-    ], function (MapView, Legend, WebMap, MapImageLayer, GeoJSONLayer, SimpleMarkerSymbol, SimpleRenderer) {
+        "esri/renderers/SimpleRenderer",
+        "esri/widgets/Home"
+    ], function (MapView, Legend, WebMap, MapImageLayer, GeoJSONLayer, SimpleMarkerSymbol, SimpleRenderer, Home) {
       var webmap = new WebMap({
         portalItem: {
           // autocasts as new PortalItem()
@@ -33,11 +34,13 @@
 
       var renderer = new SimpleRenderer({
           symbol: new SimpleMarkerSymbol({
-              size: 10,
-              color: 'black',
-              outline: null
+              size: 15,
+              color: '#33332c',
+              outline: {
+                  color: '#D7DAD8',
+                  width: 1
+              }
           })
-
       });
 
       var geoLayer = new GeoJSONLayer({
@@ -45,11 +48,17 @@
           "assets/LivingLocations.geojson",
 		  copyright: 'Jenny Herring',
           renderer: renderer,
-
       });
 
       webmap.add(geoLayer);
-      //webmap.add(layer);
+
+      // let homeWidget = new Home({
+      //    view: view,
+      //    viewpoint: new Viewpoint()
+      // });
+      //
+      // webmap.add(homeWidget, "top-left");
+
 
       var view = new MapView({
         container: "mapDiv",
@@ -58,21 +67,6 @@
         map: webmap,
       });
 
-      view.when(function () {
-        var featureLayerStates = webmap.layers.getItemAt(0);
-        var legend = new Legend({
-          view: view,
-          layerInfos: [
-            {
-              layer: featureLayerStates,
-              title: "Where in the world?"
-            },
-
-          ]
-        });
-
-        view.ui.add(legend, "bottom-right");
-      });
     });
   </script>
 	</head>
