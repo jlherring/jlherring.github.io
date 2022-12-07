@@ -23,7 +23,8 @@
         "esri/symbols/SimpleMarkerSymbol",
         "esri/renderers/SimpleRenderer",
         "esri/widgets/Home",
-    ], function (MapView, Legend, WebMap, FeatureLayer, GeoJSONLayer, SimpleMarkerSymbol, SimpleRenderer, Home) {
+		"esri/popup/content/ImageMediaInfo",
+    ], function (MapView, Legend, WebMap, FeatureLayer, GeoJSONLayer, SimpleMarkerSymbol, SimpleRenderer, Home, ImageMediaInfo) {
       var webmap = new WebMap({
         portalItem: {
           // autocasts as new PortalItem()
@@ -45,7 +46,10 @@
 
         const popupLiving = {
         	"title": "Where in the world?",
-			"content": "{Location}<br>{Description}<br>"
+			"content": "{Location}<br><br>{Description}<br>",
+				type:"media",
+				value: "{Photo}",
+
 		}
 
       var geoLayer = new GeoJSONLayer({
