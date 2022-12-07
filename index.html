@@ -18,12 +18,12 @@
       "esri/views/MapView",
       "esri/widgets/Legend",
       "esri/WebMap",
-      "esri/layers/MapImageLayer",
+      "esri/layers/FeatureLayer",
 		"esri/layers/GeoJSONLayer",
         "esri/symbols/SimpleMarkerSymbol",
         "esri/renderers/SimpleRenderer",
-        "esri/widgets/Home"
-    ], function (MapView, Legend, WebMap, MapImageLayer, GeoJSONLayer, SimpleMarkerSymbol, SimpleRenderer, Home) {
+        "esri/widgets/Home",
+    ], function (MapView, Legend, WebMap, FeatureLayer, GeoJSONLayer, SimpleMarkerSymbol, SimpleRenderer, Home) {
       var webmap = new WebMap({
         portalItem: {
           // autocasts as new PortalItem()
@@ -43,11 +43,19 @@
           })
       });
 
+        const popupLiving = {
+        	"title": "Where in the world?",
+			"content": "{Location}"
+		}
+
       var geoLayer = new GeoJSONLayer({
         url:
           "assets/LivingLocations.geojson",
 		  copyright: 'Jenny Herring',
           renderer: renderer,
+		  outfields:["Location"],
+		  popupEnabled: true,
+		  popupTemplate: popupLiving,
       });
 
       webmap.add(geoLayer);
@@ -65,6 +73,7 @@
         });
 
         view.ui.add(homeBtn, "top-left");
+
 
     });
   </script>
