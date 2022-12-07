@@ -44,34 +44,24 @@
           })
       });
 
-		 // let imageMediaInfoValue = new ImageMediaInfoValue({
-		 // 	sourceURL: "{Photo}"
-		 // });
-		//
-		// let imageElement = new ImageMediaInfo({
-		//   title: "<b>What in the world?</b>",
-		//   caption: "{Description}",
-		//   value: imageMediaInfoValue
-		// });
-		//
-		// let mediaElement = new MediaContent({
-		//   mediaInfos: [ imageElement ]
-		// });
+
+		 let imageElement = new ImageMediaInfo({
+			 title: "<b>What in the world?</b>",
+			 caption: "{Description}",
+			 value: {
+			 	type: "image",
+			 	sourceURL: "{Photo}",
+		   }
+		 });
 
 
         const popupLiving = {
-        	"title": "Where in the world?",
-			"content": "{Location}<br><br>{Description}<br>",
-				type:"media",
-				// mediaInfos:[{
-        		// 	"title": "What in the world?",
-				// 	"caption": "{Description}",
-				// 	"type": "image",
-				// 	"value":{
-        		// 		"sourceURL": "{Photo}"
-				//
-				// 	}				}]
+        	title: "Where in the world?",
+			content: "{Location}<br>",
+			type: "media",
+			mediaInfos: [{
 
+			}],
 		}
 
       var geoLayer = new GeoJSONLayer({
@@ -162,10 +152,10 @@
 																<p>After completing my undergraduate degree in Anthropology and Archaeology at The University of North Carolina at Chapel Hill in 2013, I realized my Carolina Blue pride could be temporarily put aside to continue advancing my skills in GIS by pursuing my Master’s of Geospatial Information Science & Technology degree at North Carolina State University.
 As a GIS specialist, I know how pivotal technology is in organizing masses of spatial data. But, as an anthropologist, I understand that how people use and perceive tools also matters when researching issues and creating plans of action. I thrive on this combination of problem-solving and interpersonal communication.</p>
                                                                 <p>I make no bones about it: I'm an overthinker, always looks for ways to improve. During my time interning with NASA DEVELOP, my team was tasked with
-																	taking Myers-Briggs personality tests. I am thoroughly and completely the <a href="https://www.16personalities.com/intj-personality">Architect (INTJ)</a>: a person with Introverted, Intuitive, Thinking, and Judging personality traits. If you haven't check them out,
+																	taking Myers-Briggs personality tests. I am thoroughly and completely the <a href="https://www.16personalities.com/intj-personality">Architect (INTJ)</a>: a person with Introverted, Intuitive, Thinking, and Judging personality traits. If you haven't checked them out,
 																I strongly recommended playing around with the self-assessments.</p>
 																<p>I am also a lover of the outdoors and enjoy running, biking, and hiking. Despite the constant humming of computers during my regular day, I very much love unplugging, be that through reading, art, or taking a walk. Check out my
-																Hobbies page to see a bit more.</p>
+																<a href="hobbies.html">Hobbies</a> to see a bit more.</p>
 															</article>
 
 													</div>
@@ -181,7 +171,7 @@ As a GIS specialist, I know how pivotal technology is in organizing masses of sp
 								<!-- Features -->
 									<section class="box blog">
 										<h2 class="major"><span>Look! A Map!</span></h2>
-                                        <p>I'm mostly just a simple gal from North Cackalacky. Explore the map below to see where I've lived.</p>
+                                        <p>I'm mostly just a simple gal from North Cackalacky. Explore the map below to see where I've lived and worked.</p>
 										<P><div id="mapDiv"></div></P>
                                         <p><a href="experience.html" class="button">Explore More</a></p>
 
