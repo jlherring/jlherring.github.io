@@ -45,7 +45,7 @@
 
         const popupLiving = {
         	"title": "Where in the world?",
-			"content": "{Location}"
+			"content": "{Location}<br>{Description}<br>"
 		}
 
       var geoLayer = new GeoJSONLayer({
@@ -53,7 +53,7 @@
           "assets/LivingLocations.geojson",
 		  copyright: 'Jenny Herring',
           renderer: renderer,
-		  outfields:["Location"],
+		  outfields:["Location", "Description", "Photo"],
 		  popupEnabled: true,
 		  popupTemplate: popupLiving,
       });
