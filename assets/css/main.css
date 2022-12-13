@@ -2221,6 +2221,7 @@ input, select, textarea {
 			table.default thead {
 				background: #E7EAE8;
 				color: #fff;
+
 			}
 
 /* Box */
@@ -3407,10 +3408,20 @@ body {
   }
 }
 
+
+/*  Skills section */
 .checked {
 	color: orange;
 }
 
 .unchecked {
-	color: blue;
+	color: #E7EAE8;
+}
+
+.skillsTable {
+	width: 100%
+}
+
+.skillsTable .thead {
+	font-size: 100pt;
 }
