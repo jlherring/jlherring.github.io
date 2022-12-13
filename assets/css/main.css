@@ -3406,3 +3406,11 @@ body {
     border-radius: 500px 0 0 500px;
   }
 }
+
+.checked {
+	color: orange;
+}
+
+.unchecked {
+	color: blue;
+}
