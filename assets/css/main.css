@@ -2228,6 +2228,7 @@ input, select, textarea {
 				text-transform: uppercase;
 				color: #6b7770;
 
+
 			}
 
 /* Box */
@@ -3422,12 +3423,4 @@ body {
 
 .unchecked {
 	color: #E7EAE8;
-}
-
-.skillsTable {
-	width: 100%
-}
-
-.skillsTable .thead {
-	font-size: 100pt;
 }
