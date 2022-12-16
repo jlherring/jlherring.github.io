@@ -24,7 +24,8 @@
         "esri/renderers/SimpleRenderer",
         "esri/widgets/Home",
 		"esri/popup/content/ImageMediaInfo",
-    ], function (MapView, Legend, WebMap, FeatureLayer, GeoJSONLayer, SimpleMarkerSymbol, SimpleRenderer, Home, ImageMediaInfo) {
+		"esri/popup/content/MediaContent",
+    ], function (MapView, Legend, WebMap, FeatureLayer, GeoJSONLayer, SimpleMarkerSymbol, SimpleRenderer, Home, ImageMediaInfo, MediaContent) {
       var webmap = new WebMap({
         portalItem: {
           // autocasts as new PortalItem()
@@ -35,13 +36,13 @@
 
       var renderer = new SimpleRenderer({
           symbol: new SimpleMarkerSymbol({
-              size: 15,
+              size: 10,
               color: '#33332c',
               outline: {
                   color: '#D7DAD8',
                   width: 1
-              }
-          })
+              },
+          }),
       });
 
 
@@ -49,9 +50,12 @@
 			 title: "<b>What in the world?</b>",
 			 caption: "{Description}",
 			 value: {
-			 	type: "image",
-			 	sourceURL: "{Photo}",
+			 	sourceURL: "assets/livingLocations/Apex.JPG",
 		   }
+		 });
+
+		 let mediaElement = new MediaContent({
+			mediaInfos: [imageElement],
 		 });
 
 
@@ -59,10 +63,11 @@
         	title: "Where in the world?",
 			content: "{Location}<br><br> ",
 			type: "media",
-			mediaInfos: [{
+			mediaInfos: mediaElement,
+			//mediaInfos: [{
 
-			}],
-		}
+			//}],
+		};
 
       var geoLayer = new GeoJSONLayer({
         url:
@@ -71,11 +76,10 @@
           renderer: renderer,
 		  outfields:["Location", "Description", "Photo"],
 		  popupEnabled: true,
-		  popupTemplate: popupLiving,
+		  popupTemplate: popupLiving
       });
 
       webmap.add(geoLayer);
-
 
       var view = new MapView({
         container: "mapDiv",
@@ -206,7 +210,7 @@
 												<span class="fa fa-star checked"></span>
 												<span class="fa fa-star checked"></span>
 												<span class="fa fa-star checked"></span>
-												<span class="fa fa-star unchecked"></span>
+												<span class="fa fa-star checked"></span>
 											</td>
 										</tr>
 										<tr>
