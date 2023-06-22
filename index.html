@@ -61,7 +61,7 @@
 
         const popupLiving = {
         	title: "Where in the world?",
-			content: "{Location}<br><br> ",
+			content: "{Location}<br><br>",
 			type: "media",
 			mediaInfos: mediaElement,
 			//mediaInfos: [{
@@ -76,7 +76,7 @@
           renderer: renderer,
 		  outfields:["Location", "Description", "Photo"],
 		  popupEnabled: true,
-		  popupTemplate: popupLiving
+		  popupTemplate: popupLiving,
       });
 
       webmap.add(geoLayer);
@@ -89,7 +89,7 @@
       });
 
        const homeBtn = new Home({
-          view: view
+          view: view,
         });
 
         view.ui.add(homeBtn, "top-left");
