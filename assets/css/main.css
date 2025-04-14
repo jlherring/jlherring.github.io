@@ -2533,7 +2533,7 @@ input, select, textarea {
 		background-image: url("images/overlay.png"), url("images/overlay.png"), url("../../images/ZoomSucculents.JPG");
 		background-position: top left, top left, center center;
 		background-repeat: repeat, repeat, no-repeat;
-		background-size: auto, auto, cover;
+		background-size: 25%, 25%, cover;
 		z-index: 1;
 		padding: 11em 0;
 	}
@@ -2676,7 +2676,7 @@ input, select, textarea {
 
 	#footer {
 		text-align: center;
-		padding: 8em 0 8em 0;
+		padding: 2em 0 2em 0;
 	}
 
 		#footer a {
@@ -2696,10 +2696,10 @@ input, select, textarea {
 	#copyright {
 		display: inline-block;
 		background: #e7eae8;
-		padding: 0.75em 2em 0.75em 2em;
+		padding: 0.75em .75em 0.75em .75em;
 		border-radius: 8px;
 		color: #8b9790;
-		margin: 4em 0 0 0;
+		margin: 1em 0 0 0;
 	}
 
 		#copyright a {
@@ -2797,7 +2797,7 @@ input, select, textarea {
 		/* Footer */
 
 			#footer {
-				padding: 6em 0 6em 0;
+				padding: 2em 0 2em 0;
 			}
 
 	}
@@ -3202,7 +3202,7 @@ input, select, textarea {
 				display: block;
 				border-left: 0;
 				padding-left: 0;
-				line-height: 1.75em;
+				line-height: 1em;
 			}
 
 	}
