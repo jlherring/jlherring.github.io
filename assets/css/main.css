@@ -3339,21 +3339,18 @@ input, select, textarea {
 }
 
 .timecontainer .content h3 {
-  margin: 0 0 10px 0;
-  font-size: 18px;
-  font-weight: normal;
-  color: #C1CAC5;
-
-.timecontainer .content p {
-  margin: 0;
-  line-height: 20px;
+	margin: 0 0 10px 0;
+	font-size: 18px;
+	font-weight: normal;
+	color: #C1CAC5;
 }
 
-.timecontainer .content .ul li {
+.timecontainer .content p, ul {
   margin: 0;
-  line-height: 18px;
-	font-size: 10px;
+  line-height: 22px;
+	font-size: 14px;
 }
+
 
 @media (max-width: 767.98px) {
   .timeline::after {
