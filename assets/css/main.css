@@ -3345,7 +3345,13 @@ input, select, textarea {
 	color: #C1CAC5;
 }
 
-.timecontainer .content p, ul {
+.timecontainer .content p {
+  margin: 0;
+  line-height: 22px;
+	font-size: 16px;
+}
+
+.timecontainer .content ul {
   margin: 0;
   line-height: 22px;
 	font-size: 14px;
