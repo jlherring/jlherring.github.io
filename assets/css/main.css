@@ -3206,18 +3206,13 @@ input, select, textarea {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
-}
-
 .timeline {
   position: relative;
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
   padding: 15px 0;
+	font-color: #6B7770;
 }
 
 .timeline::after {
@@ -3232,7 +3227,7 @@ body {
 }
 
 .timecontainer {
-  padding: 15px 30px;
+  padding: 15px 15px;
   position: relative;
   background: inherit;
   width: 50%;
@@ -3253,7 +3248,7 @@ body {
   height: 16px;
   top: calc(50% - 8px);
   right: -8px;
-  background: #ffffff;
+  background: #C1EDBB;
   border: 2px solid #6b7770;
   border-radius: 16px;
   z-index: 1;
@@ -3266,7 +3261,7 @@ body {
 .timecontainer::before {
   content: '';
   position: absolute;
-  width: 50px;
+  width:8px;
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
@@ -3306,7 +3301,7 @@ body {
   height: 40px;
   padding: 9px 0;
   top: calc(50% - 20px);
-  background: #e7eae8;
+  #background: #e7eae8;
   border: 2px solid #6b7770;
   border-radius: 40px;
   text-align: center;
@@ -3324,29 +3319,40 @@ body {
 }
 
 .timecontainer .content {
-  padding: 30px 90px 30px 30px;
-  background: #e7eae8;
+  padding: 20px 20px 20px 20px;
+  #background: #e7eae8;
   position: relative;
-  border-radius: 0 500px 500px 0;
+  border-radius: 10px 10px 10px 10px;
+	border: 2px solid #6b7770;
 }
 
 .timecontainer.right .content {
-  padding: 30px 30px 30px 90px;
-  border-radius: 500px 0 0 500px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .timecontainer .content h2 {
   margin: 0 0 10px 0;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: normal;
   color: #6b7770;
 }
 
+.timecontainer .content h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #C1CAC5;
+
 .timecontainer .content p {
   margin: 0;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
+  line-height: 20px;
+}
+
+.timecontainer .content .ul li {
+  margin: 0;
+  line-height: 18px;
+	font-size: 10px;
 }
 
 @media (max-width: 767.98px) {
@@ -3389,8 +3395,8 @@ body {
 
   .timecontainer.left .content,
   .timecontainer.right .content {
-    padding: 30px 30px 30px 90px;
-    border-radius: 500px 0 0 500px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px 10px 10px 10px;
   }
 }
 

@@ -46,28 +46,27 @@
       });
 
 
+
+
 		 let imageElement = new ImageMediaInfo({
-			 title: "<b>What in the world?</b>",
-			 caption: "{Description}",
 			 value: {
-			 	sourceURL: "assets/livingLocations/Apex.JPG",
+			 	sourceURL: "{Photo}",
 		   }
 		 });
 
-		 let mediaElement = new MediaContent({
-			mediaInfos: [imageElement],
+		 let photoElement = new MediaContent({
+			mediaInfos: [ imageElement ],
 		 });
+
 
 
         const popupLiving = {
         	title: "Where in the world?",
+			type: "image",
 			content: "{Location}<br><br>",
-			type: "media",
-			mediaInfos: mediaElement,
-			//mediaInfos: [{
-
-			//}],
-		};
+			value: {
+			 	sourceURL: "imageElement",
+		}};
 
       var geoLayer = new GeoJSONLayer({
         url:
