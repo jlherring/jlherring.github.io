@@ -3211,10 +3211,10 @@ input, select, textarea {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-  #padding: 15px 0;
 	font-color: #6B7770;
 }
 
+/* where the main time line goes */
 .timeline::after {
   content: '';
   position: absolute;
@@ -3222,30 +3222,24 @@ input, select, textarea {
   background: #6b7770;
   top: 0;
   bottom: 0;
-  left: 50%;
+  left: 10%;
   margin-left: -1px;
 }
 
 .timecontainer {
-  padding: 15px 15px;
+  padding: 15px 15px 15px 28px;
   position: relative;
   background: inherit;
-  width: 50%;
+  width: 80%;
+	left:10%;
 }
 
-.timecontainer.left {
-  left: 0;
-}
-
-.timecontainer.right {
-  left: 50%;
-}
-
+/* where the circle goes up/down */
 .timecontainer::after {
   content: '';
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   top: calc(50% - 8px);
   right: -8px;
   background: #C1EDBB;
@@ -3254,6 +3248,7 @@ input, select, textarea {
   z-index: 1;
 }
 
+/* where the circle goes left/right */
 .timecontainer.right::after {
   left: -8px;
 }
@@ -3261,14 +3256,15 @@ input, select, textarea {
 .timecontainer::before {
   content: '';
   position: absolute;
-  width:8px;
+  width:20px;
   height: 2px;
-  top: calc(50% - 1px);
+  top: calc(50%);
   right: 8px;
   background: #6b7770;
   z-index: 1;
 }
 
+/* moves horizontal line left/right */
 .timecontainer.right::before {
   left: 8px;
 }
@@ -3276,7 +3272,7 @@ input, select, textarea {
 .timecontainer .date {
   position: absolute;
   display: inline-block;
-  top: calc(50% - 8px);
+  top: calc(50% - 12px);
   text-align: center;
   font-size: 14px;
   font-weight: bold;
@@ -3286,48 +3282,21 @@ input, select, textarea {
   z-index: 1;
 }
 
-.timecontainer.left .date {
-  right: -90px;
-}
 
 .timecontainer.right .date {
-  left: -90px;
+  left: -95px;
 }
 
-.timecontainer .icon {
-  position: absolute;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  padding: 9px 0;
-  top: calc(50% - 20px);
-  #background: #e7eae8;
-  border: 2px solid #6b7770;
-  border-radius: 40px;
-  text-align: center;
-  font-size: 18px;
-  color: #6b7770;
-  z-index: 1;
-}
-
-.timecontainer.left .icon {
-  right: 56px;
-}
-
-.timecontainer.right .icon {
-  left: 56px;
-}
 
 .timecontainer .content {
   padding: 20px 20px 20px 20px;
-  #background: #e7eae8;
   position: relative;
   border-radius: 10px 10px 10px 10px;
 	border: 2px solid #6b7770;
 }
 
 .timecontainer.right .content {
-  padding: 20px 20px 20px 20px;
+  padding: 25px 25px 25px 25px;
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -3357,51 +3326,6 @@ input, select, textarea {
 	font-size: 14px;
 }
 
-
-@media (max-width: 767.98px) {
-  .timeline::after {
-    left: 90px;
-  }
-
-  .timecontainer {
-    width: 100%;
-    padding-left: 120px;
-    padding-right: 30px;
-  }
-
-  .timecontainer.right {
-    left: 0%;
-  }
-
-  .timecontainer.left::after,
-  .timecontainer.right::after {
-    left: 82px;
-  }
-
-  .timecontainer.left::before,
-  .timecontainer.right::before {
-    left: 100px;
-    border-color: transparent #6b7770 transparent transparent;
-  }
-
-  .timecontainer.left .date,
-  .timecontainer.right .date {
-    right: auto;
-    left: 15px;
-  }
-
-  .timecontainer.left .icon,
-  .timecontainer.right .icon {
-    right: auto;
-    left: 146px;
-  }
-
-  .timecontainer.left .content,
-  .timecontainer.right .content {
-    padding: 20px 20px 20px 20px;
-    border-radius: 10px 10px 10px 10px;
-  }
-}
 
 
 /*  Skills section */
