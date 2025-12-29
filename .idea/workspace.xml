@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="extra space">
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education.html" beforeDir="false" afterPath="$PROJECT_DIR$/education.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/experience.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jlherring&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jlherring/jlherring.github.io.git&quot;,
+    &quot;accountId&quot;: &quot;4d7831f0-25d5-4082-999c-54f8d32bfd31&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="30HmuAMqdPK4AEKKuh3KgaISbVg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.education.html.executor": "Run",
+    "JavaScript Debug.experience.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "updatetimeline",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.159" />
+        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="" />
+      <created>1753293092248</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753293092248</updated>
+      <workItem from="1753293093364" duration="1003000" />
+      <workItem from="1756220519939" duration="10745000" />
+      <workItem from="1764797564671" duration="735000" />
+      <workItem from="1767022644829" duration="3400000" />
+    </task>
+    <task id="LOCAL-00001" summary="add SWERI Scientific Data article and photos">
+      <option name="closed" value="true" />
+      <created>1756223552738</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756223552738</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add SWERI Scientific Data article and photos">
+      <option name="closed" value="true" />
+      <created>1764797661351</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764797661351</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add SWERI Scientific Data article and photos">
+      <option name="closed" value="true" />
+      <created>1764797783846</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764797783846</updated>
+    </task>
+    <task id="LOCAL-00004" summary="simplify landing page">
+      <option name="closed" value="true" />
+      <created>1764797844765</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764797844765</updated>
+    </task>
+    <task id="LOCAL-00005" summary="simplify landing page">
+      <option name="closed" value="true" />
+      <created>1764797892194</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764797892194</updated>
+    </task>
+    <task id="LOCAL-00006" summary="experience numbers updated">
+      <option name="closed" value="true" />
+      <created>1764797953504</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764797953504</updated>
+    </task>
+    <task id="LOCAL-00007" summary="simplify">
+      <option name="closed" value="true" />
+      <created>1764798065406</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1764798065406</updated>
+    </task>
+    <task id="LOCAL-00008" summary="simplify">
+      <option name="closed" value="true" />
+      <created>1764798156591</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1764798156591</updated>
+    </task>
+    <task id="LOCAL-00009" summary="simplify">
+      <option name="closed" value="true" />
+      <created>1764798202888</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1764798202888</updated>
+    </task>
+    <task id="LOCAL-00010" summary="extra space">
+      <option name="closed" value="true" />
+      <created>1764798215124</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1764798215124</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add SWERI Scientific Data article and photos" />
+    <MESSAGE value="simplify landing page" />
+    <MESSAGE value="experience numbers updated" />
+    <MESSAGE value="simplify" />
+    <MESSAGE value="extra space" />
+    <option name="LAST_COMMIT_MESSAGE" value="extra space" />
+  </component>
+</project>
