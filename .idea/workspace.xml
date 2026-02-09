@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="Add description to experience">
+    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="Add hobby photos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/experience.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,7 @@
       <workItem from="1764797564671" duration="735000" />
       <workItem from="1767022644829" duration="7199000" />
       <workItem from="1770328952468" duration="258000" />
-      <workItem from="1770657816173" duration="7116000" />
+      <workItem from="1770657816173" duration="7450000" />
     </task>
     <task id="LOCAL-00001" summary="add SWERI Scientific Data article and photos">
       <option name="closed" value="true" />
@@ -246,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770665008928</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Add hobby photos">
+      <option name="closed" value="true" />
+      <created>1770666264284</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1770666264284</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +269,7 @@
     <MESSAGE value="Add crochet photos" />
     <MESSAGE value="Initial updates to experience (description) and hobbies (reorg/new photos)" />
     <MESSAGE value="Add description to experience" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add description to experience" />
+    <MESSAGE value="Add hobby photos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add hobby photos" />
   </component>
 </project>
