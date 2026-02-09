@@ -4,13 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="clean up tools" />
+    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="Add crochet photos">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/experience.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hobbies.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -42,6 +59,7 @@
   "keyToString": {
     "JavaScript Debug.education.html.executor": "Run",
     "JavaScript Debug.experience.html.executor": "Run",
+    "JavaScript Debug.hobbies.html.executor": "Run",
     "JavaScript Debug.index.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -73,6 +91,8 @@
       <workItem from="1756220519939" duration="10745000" />
       <workItem from="1764797564671" duration="735000" />
       <workItem from="1767022644829" duration="7199000" />
+      <workItem from="1770328952468" duration="258000" />
+      <workItem from="1770657816173" duration="3700000" />
     </task>
     <task id="LOCAL-00001" summary="add SWERI Scientific Data article and photos">
       <option name="closed" value="true" />
@@ -202,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767029818502</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add crochet photos">
+      <option name="closed" value="true" />
+      <created>1770329197747</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1770329197747</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +243,7 @@
     <MESSAGE value="simplify" />
     <MESSAGE value="extra space" />
     <MESSAGE value="update experience timeline and css; add new folder of resumes" />
-    <option name="LAST_COMMIT_MESSAGE" value="update experience timeline and css; add new folder of resumes" />
+    <MESSAGE value="Add crochet photos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add crochet photos" />
   </component>
 </project>
