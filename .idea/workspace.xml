@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="update index and tweak experience not to overlap">
+    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="geojson working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/experience.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index_old.html" beforeDir="false" afterPath="$PROJECT_DIR$/index_old.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +102,7 @@
       <workItem from="1770753671192" duration="2871000" />
       <workItem from="1771872071399" duration="3355000" />
       <workItem from="1771884143265" duration="5556000" />
-      <workItem from="1772554390400" duration="691000" />
+      <workItem from="1772554390400" duration="8011000" />
     </task>
     <task id="LOCAL-00001" summary="add SWERI Scientific Data article and photos">
       <option name="closed" value="true" />
@@ -289,7 +288,23 @@
       <option name="project" value="LOCAL" />
       <updated>1771875584710</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="new js5.0 map">
+      <option name="closed" value="true" />
+      <created>1772555126016</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1772555126016</updated>
+    </task>
+    <task id="LOCAL-00025" summary="geojson working">
+      <option name="closed" value="true" />
+      <created>1772559111881</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1772559111881</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,6 +324,8 @@
     <MESSAGE value="verbage tweaks" />
     <MESSAGE value="add pfas experience" />
     <MESSAGE value="update index and tweak experience not to overlap" />
-    <option name="LAST_COMMIT_MESSAGE" value="update index and tweak experience not to overlap" />
+    <MESSAGE value="new js5.0 map" />
+    <MESSAGE value="geojson working" />
+    <option name="LAST_COMMIT_MESSAGE" value="geojson working" />
   </component>
 </project>

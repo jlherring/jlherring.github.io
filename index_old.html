@@ -83,26 +83,38 @@
     </arcgis-map>
     <script type="module">
       const GeoJSONLayer = await $arcgis.import("@arcgis/core/layers/GeoJSONLayer.js");
+	  const ImageMediaInfo = await $arcgis.import("@arcgis/core/popup/content/ImageMediaInfo.js");
 
 	   const template = {
-        title: "Title",
-        content: "Magnitude ",
-        fieldInfos: [
-          {
-            fieldName: "Location",
-          },
-        ],
+        title: "Where in the world?",
+        content: [
+			{
+				type: "media",
+				title: "{Location}",
+				mediaInfos: [
+					{
+						type: "image",
+						caption: "{Description}",
+						value: {
+							sourceURL: "{photo}",
+						},
+
+					}
+				],
+			},
+		],
+
       };
 	  const renderer = {
         type: "simple",
         symbol: {
           type: "simple-marker",
-          color: "orange",
+          color: "black",
         },
       };
 	 const layer = new GeoJSONLayer({
 			url: "assets/LivingLocations.geojson",
-			copyright: "Jenny",
+			copyright: "Jenny Herring",
 			popupTemplate: template,
 			renderer: renderer,
 		  });
