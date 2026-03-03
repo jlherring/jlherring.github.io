@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="">
+    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="RI Broadband map added to experience">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/experience.html" afterDir="false" />
     </list>
@@ -103,7 +103,7 @@
       <workItem from="1771872071399" duration="3355000" />
       <workItem from="1771884143265" duration="5556000" />
       <workItem from="1772554390400" duration="9616000" />
-      <workItem from="1772576169251" duration="689000" />
+      <workItem from="1772576169251" duration="797000" />
     </task>
     <task id="LOCAL-00001" summary="add SWERI Scientific Data article and photos">
       <option name="closed" value="true" />
@@ -313,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772565171630</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="RI Broadband map added to experience">
+      <option name="closed" value="true" />
+      <created>1772576899802</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1772576899802</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,6 +344,7 @@
     <MESSAGE value="new js5.0 map" />
     <MESSAGE value="geojson working" />
     <MESSAGE value="photo working in caption" />
-    <option name="LAST_COMMIT_MESSAGE" value="photo working in caption" />
+    <MESSAGE value="RI Broadband map added to experience" />
+    <option name="LAST_COMMIT_MESSAGE" value="RI Broadband map added to experience" />
   </component>
 </project>
