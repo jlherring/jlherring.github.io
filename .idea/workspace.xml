@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="add pfas experience">
+    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="update index and tweak experience not to overlap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/experience.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -55,23 +55,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.education.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.experience.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.hobbies.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.education.html.executor": "Run",
+    "JavaScript Debug.experience.html.executor": "Run",
+    "JavaScript Debug.hobbies.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.index_old.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "js-map-updaet",
+    "last_opened_file_path": "C:/Data/portfoliojennynewlaptop",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Data\portfoliojennynewlaptop" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -94,7 +101,9 @@
       <workItem from="1770328952468" duration="258000" />
       <workItem from="1770657816173" duration="7553000" />
       <workItem from="1770753671192" duration="2871000" />
-      <workItem from="1771872071399" duration="2581000" />
+      <workItem from="1771872071399" duration="3355000" />
+      <workItem from="1771884143265" duration="5556000" />
+      <workItem from="1772554390400" duration="691000" />
     </task>
     <task id="LOCAL-00001" summary="add SWERI Scientific Data article and photos">
       <option name="closed" value="true" />
@@ -272,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770753763513</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update index and tweak experience not to overlap">
+      <option name="closed" value="true" />
+      <created>1771875584710</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1771875584710</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +308,7 @@
     <MESSAGE value="Add hobby photos" />
     <MESSAGE value="verbage tweaks" />
     <MESSAGE value="add pfas experience" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pfas experience" />
+    <MESSAGE value="update index and tweak experience not to overlap" />
+    <option name="LAST_COMMIT_MESSAGE" value="update index and tweak experience not to overlap" />
   </component>
 </project>
