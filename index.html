@@ -11,98 +11,9 @@
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel=icon href=assets/css/images/favicon.png>
-		<!--<link rel="stylesheet" href="https://js.arcgis.com/4.11/esri/themes/light/main.css" />
-		<script src="https://js.arcgis.com/4.11/"></script> -->
-		<link rel="stylesheet" href="https://js.arcgis.com/4.34/esri/themes/light/main.css" />
-		<!-- Load Calcite Design System -->
-		<script type="module" src="https://js.arcgis.com/calcite-components/3.3.3/calcite.esm.js"></script>
-		<!-- Load the JavaScript Maps SDK core API -->
-		<script src="https://js.arcgis.com/4.34/"></script>
-		<!-- Load the JavaScript Maps SDK Map components or other component packages -->
-		<script type="module" src="https://js.arcgis.com/4.34/map-components/"></script>
-  <script>
-    require([
-      "esri/views/MapView",
-      "esri/widgets/Legend",
-      "esri/WebMap",
-      "esri/layers/FeatureLayer",
-		"esri/layers/GeoJSONLayer",
-        "esri/symbols/SimpleMarkerSymbol",
-        "esri/renderers/SimpleRenderer",
-        "esri/widgets/Home",
-		"esri/popup/content/ImageMediaInfo",
-		"esri/popup/content/MediaContent",
-    ], function (MapView, Legend, WebMap, FeatureLayer, GeoJSONLayer, SimpleMarkerSymbol, SimpleRenderer, Home, ImageMediaInfo, MediaContent) {
-      var webmap = new WebMap({
-        portalItem: {
-          // autocasts as new PortalItem()
-			// Living Atlas Color Pencil Map: https://epa.maps.arcgis.com/home/item.html?id=826498a48bd0424f9c9315214f2165d4
-          id: "826498a48bd0424f9c9315214f2165d4"
-        }
-      });
-
-      var renderer = new SimpleRenderer({
-          symbol: new SimpleMarkerSymbol({
-              size: 10,
-              color: '#33332c',
-              outline: {
-                  color: '#D7DAD8',
-                  width: 1
-              },
-          }),
-      });
+		<script type="module" src="https://js.arcgis.com/5.0/"></script>
 
 
-
-
-		 let imageElement = new ImageMediaInfo({
-			 value: {
-			 	sourceURL: "{Photo}",
-		   }
-		 });
-
-		 let photoElement = new MediaContent({
-			mediaInfos: [ imageElement ],
-		 });
-
-
-
-        const popupLiving = {
-        	title: "Where in the world?",
-			type: "image",
-			content: "{Location}<br><br>",
-			value: {
-			 	sourceURL: "imageElement",
-		}};
-
-      var geoLayer = new GeoJSONLayer({
-        url:
-          "assets/LivingLocations.geojson",
-		  copyright: 'Jenny Herring',
-          renderer: renderer,
-		  outfields:["Location", "Description", "Photo"],
-		  popupEnabled: true,
-		  popupTemplate: popupLiving,
-      });
-
-      webmap.add(geoLayer);
-
-      var view = new MapView({
-        container: "mapDiv",
-	    center: [-80.2946, 34.592 ],
-		  zoom: 6,
-        map: webmap,
-      });
-
-       const homeBtn = new Home({
-          view: view,
-        });
-
-        view.ui.add(homeBtn, "top-left");
-
-
-    });
-  </script>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -162,7 +73,65 @@
 																</p>
 																<p>I am a mother, a manager, and an overthinker, always looking for ways to improve. I look to smooth the edges with a walk outside, with reading and writing, with unplugged time among family. And I like maps. Explore the one below to see where I've lived and worked. And don't forget to scroll south - really far south.
 																</p>
-										<P><div id="mapDiv"></div></P>
+										<P>
+																<div id="mapDiv">
+    <arcgis-map item-id="826498a48bd0424f9c9315214f2165d4" zoom="6" center="-80.2946, 34.592" popup-component-enabled>
+      <arcgis-zoom slot="top-left"></arcgis-zoom>
+		<arcgis-home slot="top-left"></arcgis-home>
+		<arcgis-popup slot="popup"></arcgis-popup>
+    </arcgis-map>
+    <script type="module">
+		// Living Atlas Color Pencil Map: https://maps.arcgis.com/home/item.html?id=826498a48bd0424f9c9315214f2165d4
+      const GeoJSONLayer = await $arcgis.import("@arcgis/core/layers/GeoJSONLayer.js");
+	   const template = {
+        title: "Where in the world?",
+        content: [
+			{
+				type: "media",
+				title: "{Location}",
+				mediaInfos: [
+					{
+						type: "image",
+						caption: "{Description}",
+						value: {
+							sourceURL: "{photo}",
+						},
+
+					}
+				],
+			},
+		],
+
+      };
+	  const renderer = {
+        type: "simple",
+        symbol: {
+          type: "simple-marker",
+          size: 10,
+			color: '#33332c',
+			outline: {
+                  color: '#D7DAD8',
+                  width: 1,
+              },
+        },
+      };
+	 const layer = new GeoJSONLayer({
+			url: "assets/LivingLocations.geojson",
+			copyright: "Jenny Herring",
+			popupTemplate: template,
+			renderer: renderer,
+		  });
+
+
+      // Add the layer to the map component
+	  const viewElement = document.querySelector("arcgis-map");
+      await viewElement.viewOnReady();
+      viewElement.map.layers.add(layer);
+	  </script>
+
+
+
+															</div></P>
 															</article>
 
 													</div>
@@ -171,19 +140,12 @@
 											</div>
 										</div>
 									</section>
-
 							</div>
-
-
-
 								</article>
-
 							</div>
-
 						</div>
-
 					</div>
-				</section>
+		</section>
 
 			<!-- Footer -->
 				<footer id="footer">
@@ -208,8 +170,8 @@
 							<div id="copyright">
 								<ul class="menu">
 									<li>Jenny Herring</li>
-									<li>February 2026</li>
-									<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+									<li>March 2026</li>
+									<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 								</ul>
 							</div>
 

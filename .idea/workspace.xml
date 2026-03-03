@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="geojson working">
+    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="photo working in caption">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/livingLocations/Apex.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/images/livingLocations/Apex.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/livingLocations/Asheville.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/images/livingLocations/Asheville.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/livingLocations/ChapelHill.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/images/livingLocations/ChapelHill.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/livingLocations/LongCreek.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/images/livingLocations/LongCreek.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/livingLocations/OakIsland.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/images/livingLocations/OakIsland.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/livingLocations/Peru.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/images/livingLocations/Peru.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/livingLocations/Wilmington.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/livingLocations/Wilmington.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index_old.html" beforeDir="false" afterPath="$PROJECT_DIR$/index_old.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +110,7 @@
       <workItem from="1770753671192" duration="2871000" />
       <workItem from="1771872071399" duration="3355000" />
       <workItem from="1771884143265" duration="5556000" />
-      <workItem from="1772554390400" duration="8011000" />
+      <workItem from="1772554390400" duration="9616000" />
     </task>
     <task id="LOCAL-00001" summary="add SWERI Scientific Data article and photos">
       <option name="closed" value="true" />
@@ -304,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772559111881</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="photo working in caption">
+      <option name="closed" value="true" />
+      <created>1772565171630</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1772565171630</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +342,7 @@
     <MESSAGE value="update index and tweak experience not to overlap" />
     <MESSAGE value="new js5.0 map" />
     <MESSAGE value="geojson working" />
-    <option name="LAST_COMMIT_MESSAGE" value="geojson working" />
+    <MESSAGE value="photo working in caption" />
+    <option name="LAST_COMMIT_MESSAGE" value="photo working in caption" />
   </component>
 </project>
