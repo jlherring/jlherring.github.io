@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="RI Broadband map added to experience">
+    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="reorder presentations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archive.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/education.html" beforeDir="false" afterPath="$PROJECT_DIR$/education.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/experience.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hobbies.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +108,8 @@
       <workItem from="1771872071399" duration="3355000" />
       <workItem from="1771884143265" duration="5556000" />
       <workItem from="1772554390400" duration="9616000" />
-      <workItem from="1772576169251" duration="797000" />
+      <workItem from="1772576169251" duration="875000" />
+      <workItem from="1772653609465" duration="3582000" />
     </task>
     <task id="LOCAL-00001" summary="add SWERI Scientific Data article and photos">
       <option name="closed" value="true" />
@@ -321,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772576899802</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="reorder presentations">
+      <option name="closed" value="true" />
+      <created>1772576990989</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1772576990989</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,6 +359,7 @@
     <MESSAGE value="geojson working" />
     <MESSAGE value="photo working in caption" />
     <MESSAGE value="RI Broadband map added to experience" />
-    <option name="LAST_COMMIT_MESSAGE" value="RI Broadband map added to experience" />
+    <MESSAGE value="reorder presentations" />
+    <option name="LAST_COMMIT_MESSAGE" value="reorder presentations" />
   </component>
 </project>
