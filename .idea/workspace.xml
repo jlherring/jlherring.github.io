@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="reorder presentations, update some css">
+    <list default="true" id="4f016313-6a40-4562-aee7-627f5345864b" name="Changes" comment="update nav">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive.html" beforeDir="false" afterPath="$PROJECT_DIR$/archive.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/education.html" beforeDir="false" afterPath="$PROJECT_DIR$/education.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/experience.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hobbies.html" beforeDir="false" afterPath="$PROJECT_DIR$/hobbies.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,25 +54,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.education.html.executor": "Run",
-    "JavaScript Debug.experience.html.executor": "Run",
-    "JavaScript Debug.hobbies.html.executor": "Run",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.index_old.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Data/portfoliojennynewlaptop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.education.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.experience.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.hobbies.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index_old.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Data/portfoliojennynewlaptop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Data\portfoliojennynewlaptop" />
@@ -108,7 +104,8 @@
       <workItem from="1771884143265" duration="5556000" />
       <workItem from="1772554390400" duration="9616000" />
       <workItem from="1772576169251" duration="875000" />
-      <workItem from="1772653609465" duration="6245000" />
+      <workItem from="1772653609465" duration="6782000" />
+      <workItem from="1772815473584" duration="1700000" />
     </task>
     <task id="LOCAL-00001" summary="add SWERI Scientific Data article and photos">
       <option name="closed" value="true" />
@@ -342,7 +339,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772657709411</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="update nav">
+      <option name="closed" value="true" />
+      <created>1772660400537</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1772660400537</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,6 +373,7 @@
     <MESSAGE value="RI Broadband map added to experience" />
     <MESSAGE value="reorder presentations" />
     <MESSAGE value="reorder presentations, update some css" />
-    <option name="LAST_COMMIT_MESSAGE" value="reorder presentations, update some css" />
+    <MESSAGE value="update nav" />
+    <option name="LAST_COMMIT_MESSAGE" value="update nav" />
   </component>
 </project>
